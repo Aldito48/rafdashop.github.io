@@ -687,7 +687,8 @@ a {
     color: var(--color-black);
   }
 }
-Contact
+
+
 #contact{
   font-family: monospace;
   background: var(--color-smoke);
@@ -732,7 +733,7 @@ Contact
   color: var(--color-default);
   transform: scale(1.6);
 }
-.card p{
+.card .info-seek p{
   margin-top: 20px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -740,9 +741,14 @@ Contact
   opacity: 0;
   transition: 0.3s linear;
 }
-.card:hover p{
+.card:hover .info-seek p{
   max-height: 40px;
   opacity: 1;
+}
+.info-seek{
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-white);
 }
 @media (max-width: 768px){
   .contact-info{
@@ -754,6 +760,8 @@ Contact
     margin: 10px 0;
   }
 }
+
+
 footer{
   bottom: 0;
   left: 0;
