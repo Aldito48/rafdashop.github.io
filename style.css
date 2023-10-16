@@ -15,9 +15,13 @@
 }
 body {
   height: auto;
+  overflow-x: hidden;
 }
 section {
   padding: 2rem 9%;
+}
+.ALL{
+  width: fit-content;
 }
 /* Navbar */
 .header {
