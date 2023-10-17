@@ -20,9 +20,6 @@ body {
 section {
   padding: 2rem 9%;
 }
-.ALL{
-  width: fit-content;
-}
 /* Navbar */
 .header {
   position: fixed;
@@ -105,6 +102,7 @@ section {
 /* Responsive */
 @media (max-width: 991px) {
   .header {
+    width: 95%;
     left: 22;
     padding: 1.3rem 5%;
   }
@@ -217,6 +215,9 @@ section {
   width: 100%;
 }
 @media (max-width: 991px) {
+  html{
+    font-size: 55%;
+  }
   section {
     padding: 5rem;
   }
@@ -553,7 +554,7 @@ a {
 /* Responsive Style */
 @media (max-width: 991px) {
   #products{
-    min-height: 250vh;
+    min-height: 200vh;
     margin-bottom: 20rem;
   }
   .product .product-card{
@@ -623,7 +624,7 @@ a {
     font-size: 1.5rem;
   }
   #products{
-    min-height: 200vh;
+    min-height: 175vh;
     height: 100%;
     margin-bottom: 20rem;
   }
@@ -835,15 +836,16 @@ footer{
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 627px){
   .header {
     left: 13;
+    width: 95%;
     padding: 1.3rem 5%;
   }
   #home .content .title{
     font-size: 4rem;
   }
   #products{
-    min-height: 200vh;
+    min-height: 350vh;
   }
 }
