@@ -561,6 +561,9 @@ a {
   }
   .product .product-card{
     margin: 50px 10px 50px 10px;
+    position: relative;
+    width: 300px;
+    height: 400px;
   }
   .container {
     flex-wrap: wrap;
@@ -623,11 +626,13 @@ a {
     font-size: 1.5rem;
   }
   #products{
-    min-height: 250vh;
+    min-height: 200vh;
+    height: 100%;
     margin-bottom: 20rem;
   }
   .product .product-card{
     margin: 40px 10px 40px 10px;
+    position: relative;
     width: 250px;
     height: 350px;
   }
@@ -842,6 +847,6 @@ footer{
     font-size: 4rem;
   }
   #products{
-    min-height: 400vh;
+    min-height: 200vh;
   }
 }
