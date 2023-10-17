@@ -849,3 +849,16 @@ footer{
     min-height: 350vh;
   }
 }
+@media (max-width: 500px){
+  .header {
+    left: 13;
+    width: 95%;
+    padding: 1.3rem 5%;
+  }
+  #home .content .title{
+    font-size: 4rem;
+  }
+  #products{
+    min-height: 350vh;
+  }
+}
