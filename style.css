@@ -347,10 +347,10 @@ a {
 }
 /* Product */
 #products {
-  min-height: 200vh;
+  min-height: auto;
   justify-content: center;
   align-items: center;
-  margin-bottom: -10rem;
+  background: var(--color-white);
 }
 .product-heading {
   color: var(--color-brown);
@@ -366,7 +366,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .product .product-card {
   z-index: 1;
@@ -479,8 +479,6 @@ a {
   transform: translateY(25px);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-
-  /* YYY */
   box-shadow: 0 0.1rem 1rem rgb(122, 122, 122);
 }
 .product .popup-card .product-img img {
@@ -554,7 +552,6 @@ a {
 /* Responsive Style */
 @media (max-width: 991px) {
   #products{
-    min-height: 200vh;
     margin-bottom: 20rem;
   }
   .product .product-card{
@@ -624,8 +621,6 @@ a {
     font-size: 1.5rem;
   }
   #products{
-    min-height: 175vh;
-    height: 100%;
     margin-bottom: 20rem;
   }
   .product .product-card{
@@ -845,20 +840,74 @@ footer{
   #home .content .title{
     font-size: 4rem;
   }
-  #products{
-    min-height: 350vh;
-  }
 }
 @media (max-width: 500px){
   .header {
-    left: 13;
+    left: 0;
     width: 95%;
     padding: 1.3rem 5%;
   }
   #home .content .title{
     font-size: 4rem;
   }
+}
+@media (max-width: 400px){
+  html{
+    font-size: 55%;
+  }
+  .header {
+    left: 10;
+    width: 95%;
+    padding: 1.3rem 5%;
+  }
+  #home .content .title{
+    font-size: 6rem;
+  }
+  #home .image {
+    flex: 1 1 10rem;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+  #home .image img {
+    width: 70%;
+  }
   #products{
-    min-height: 350vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -10px;
+  }
+  .t-b-img{
+    height: 250px;
+  }
+  .t-b-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(1);
+  }
+  .swiper-slide {
+    width: 200px !important;
+    margin: 20px 0px;
+    margin-top: 0px;
+  }
+  .product-heading {
+    color: var(--color-brown);
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-heading h3{
+    text-align: center;
+  }
+  .t-b-text strong{
+    font-size: 8pt;
+  }
+  .product .product-card {
+    width: 250px;
+    height: 350px;
+    margin: 30px;
   }
 }
