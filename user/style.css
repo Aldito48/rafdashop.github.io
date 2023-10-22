@@ -311,7 +311,7 @@ a {
 .team-sosial a {
   margin: 0px 10px;
   color: var(--color-black);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   transition: all ease 0.3s;
 }
 .team-sosial a:hover {
@@ -331,6 +331,7 @@ a {
 .swiper-slide-active {
   opacity: 1;
   border: 10px solid var(--color-default);
+  border-radius: 10px;
 }
 @media (max-width: 768px){
   .swiper {
