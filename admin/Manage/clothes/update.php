@@ -5,9 +5,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Edit Baju</title>
+        <title>Rafda Shop | Clothes</title>
         <link rel="icon" href="../../IMG/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="CSS/styleUpdateBerita2.css">
+        <link rel="stylesheet" href="../../CSS/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
@@ -43,11 +43,11 @@
         </script>
         <div class="container">
             <div class="element">
-            <h1>Baju</h1>
+            <h1>Clothes</h1>
                 <div class="edit">
-                    <p>Edit Baju</p>
+                    <p>Edit</p>
                     <div class="fungsi">
-                        <a href="../../clothes.php">Kembali</a>
+                        <a href="../../clothes.php">Back</a>
                     </div>
                 </div>
                 <div class="content">
@@ -66,24 +66,24 @@
                                 <img id="previewFoto" style="display: none; width :80px; height: 100px;">
                                 <?='<img id="oldFoto" src="data:image/jpeg;base64,'.base64_encode($data['foto']).'"height="100" width="80"/>';?>
                                 <div>
-                                    <label for="foto">Foto Produk</label>
+                                    <label for="foto">Product Image</label>
                                     <input type="hidden" name="id" value="<?=$data['ID']?>">
                                     <input type="file" id="foto" name="foto" accept=".jpg, .jpeg, .png" onchange="tampilkanFoto(event)" class="image">
                                 </div>
                                 <div>
-                                    <label for="nama">Nama Produk</label>
+                                    <label for="nama">Product Name</label>
                                     <input type="text" id="nama" name="nama" value="<?=$data['nama']?>" placeholder="Masukkan Nama...">
                                 </div>
                                 <div>
-                                    <label for="deskripsi">Deskripsi</label>
+                                    <label for="deskripsi">Description</label>
                                     <textarea id="deskripsi" name="deskripsi"><?=$data['deskripsi']?></textarea>
                                 </div>
                                 <div>
-                                    <label for="harga">Harga Produk</label>
+                                    <label for="harga">Product Price</label>
                                     <input type="number" min="0" name="harga" id="harga" value="<?=$data['harga']?>" placeholder="Masukkan Harga..." required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="jenis">Jenis</label>
+                                    <label for="jenis">Type</label>
                                     <input type="hidden" name="jenis" value="Clothes">
                                     <?php
                                         echo "<select id=\"jenis\" name=\"jenis\" disabled>

@@ -3,11 +3,11 @@
     if(isset($_SESSION['Username'])) {
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Tambah Aksesoris</title>
+        <title>Rafda Shop | Accessories</title>
         <link rel="icon" href="../../IMG/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../CSS/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
@@ -26,13 +26,14 @@
     <body>
         <div class="container">
             <div class="element">
-            <h1>Aksesoris</h1>
-                <div class="edit">
-                    <p>Tambah Aksesoris</p>
-                    <div class="fungsi">
-                        <a href="../../accessories.php">Kembali</a>
+                <h1>Accessories</h1>
+                    <div class="edit">
+                        <p>Insert</p>
+                        <div class="fungsi">
+                            <a href="../../accessories.php">Back</a>
+                        </div>
                     </div>
-                </div>
+
                 <div class="content">
                     <script>
                         function tampilkanFoto(event) {
@@ -46,26 +47,27 @@
                             reader.readAsDataURL(input.files[0]);
                         }
                     </script>
+
                     <form action="proses.php" method="POST" enctype="multipart/form-data">
-                        <img id="previewFoto" style="display: none; width :80px; height: 100px;">
+                        <img id="previewFoto" style="display: none; width :120px; height: 120px; margin: 5px;">
                         <div>
-                            <label for="foto">Foto Produk</label>
-                            <input type="file" name="foto" accept=".jpg, .jpeg, .png" onchange="tampilkanFoto(event)" class="image" required>
+                            <label for="foto">Product Image</label>
+                            <input type="file" name="foto" accept=".jpg, .jpeg, .png" onchange="tampilkanFoto(event)" class="image"  required>
                         </div>    
                         <div>
-                            <label for="nama">Nama Produk</label>
-                            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama..." required>
+                            <label for="nama">Product Name</label>
+                            <input type="text" id="nama" name="nama" placeholder="Insert Name..." required>
                         </div>
                         <div>
-                            <label for="deskripsi">Deskripsi</label>
-                            <textarea id="deskripsi" name="deskripsi" placeholder="Masukkan Deskripsi..." required></textarea>
+                            <label for="deskripsi">Description</label>
+                            <textarea id="deskripsi" name="deskripsi" placeholder="Insert Description..." required></textarea>
                         </div>
                         <div>
-                            <label for="harga">Harga Produk</label>
-                            <input type="number" min="0" name="harga" id="harga" placeholder="Masukkan Harga..." required>
+                            <label for="harga">Product Price</label>
+                            <input type="number" min="0" name="harga" id="harga" placeholder="Insert Price..." required>
                         </div>
                         <div>
-                            <label for="jenis">Jenis</label>
+                            <label for="jenis">Type</label>
                             <input type="hidden" name="jenis" value="Accessories">
                             <?php
                                 echo "<select id=\"jenis\" name=\"jenis\" disabled>
@@ -82,13 +84,15 @@
                         </div>
                         <div>
                             <label for="link">Link</label>
-                            <textarea id="link" name="link" placeholder="Masukkan Link..." required></textarea>
+                            <textarea id="link" name="link" placeholder="Insert Link..." required></textarea>
                         </div>
                         <div class="tmbl1">
-                            <input type="submit" name="add" value="Simpan">
+                            <input type="submit" name="add" value="Save">
                         </div>
                     </form>
+
                 </div>
+
             </div>
         </div>
     </body>

@@ -5,9 +5,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tambah Sepatu</title>
+        <title>Rafda Shop | Shoes</title>
         <link rel="icon" href="../../IMG/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="CSS/styleInsertBerita2.css">
+        <link rel="stylesheet" href="../../CSS/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
@@ -26,11 +26,11 @@
     <body>
         <div class="container">
             <div class="element">
-            <h1>Sepatu</h1>
+            <h1>Shoes</h1>
                 <div class="edit">
-                    <p>Tambah Sepatu</p>
+                    <p>Insert</p>
                     <div class="fungsi">
-                        <a href="../../shoes.php">Kembali</a>
+                        <a href="../../shoes.php">Back</a>
                     </div>
                 </div>
                 <div class="content">
@@ -49,23 +49,23 @@
                     <form action="proses.php" method="POST" enctype="multipart/form-data">
                         <img id="previewFoto" style="display: none; width :80px; height: 100px;">
                         <div>
-                            <label for="foto">Foto Produk</label>
+                            <label for="foto">Product Image</label>
                             <input type="file" name="foto" accept=".jpg, .jpeg, .png" onchange="tampilkanFoto(event)" class="image" required>
                         </div>    
                         <div>
-                            <label for="nama">Nama Produk</label>
+                            <label for="nama">Product Name</label>
                             <input type="text" id="nama" name="nama" placeholder="Masukkan Nama..." required>
                         </div>
                         <div>
-                            <label for="deskripsi">Deskripsi</label>
+                            <label for="deskripsi">Description</label>
                             <textarea id="deskripsi" name="deskripsi" required></textarea>
                         </div>
                         <div>
-                            <label for="harga">Harga Produk</label>
+                            <label for="harga">Product Price</label>
                             <input type="number" min="0" name="harga" id="harga" placeholder="Masukkan Harga..." required>
                         </div>
                         <div>
-                            <label for="jenis">Jenis</label>
+                            <label for="jenis">Type</label>
                             <input type="hidden" name="jenis" value="Shoes">
                             <?php
                                 echo "<select id=\"jenis\" name=\"jenis\" disabled>
