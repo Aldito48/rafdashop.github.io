@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Rafda'Shop</title>
+    <title>About | Rafda Shop</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styleabout.css">
@@ -208,6 +208,21 @@
             </div>
         </section>
     <!-- End About -->
+
+    <footer data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+        <div class="footer-content">
+            <h3>RAFDA SHOP</h3>
+            <p>Enjoy Shopping !!</p>
+            <ul class="socials">
+                <li><a href="mailto:akbar909897@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a></li>
+                <li><a href="https://wa.me/6281262880424" target="_blank"><i class="bx bxl-whatsapp"></i></a></li>
+                <li><a href="https://instagram.com/rafda_official" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 RafdaShop. designed by <span>DIFA</span></p>
+        </div>
+    </footer>
 
     <!-- Script -->
     <script src="assets/js/script.js"></script>
